@@ -11,6 +11,10 @@
 
     <title>Tonish Financial Services</title>
 
+    <script>
+      let currentYear = new Date().getFullYear();
+    </script>
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -400,9 +404,9 @@ https://templatemo.com/tm-545-finance-business
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-3 footer-item">
-            <h4>Finance Business</h4>
-            <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
+          <div class="col-md-4 footer-item">
+            <h4>Tonish Finance Services</h4>
+            <p>We appreciate your contribution to the economy that’s why we pledge to Finance and develop you through our services</p>
             <ul class="social-icons">
               <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -410,7 +414,7 @@ https://templatemo.com/tm-545-finance-business
               <li><a href="#"><i class="fa fa-behance"></i></a></li>
             </ul>
           </div>
-          <div class="col-md-3 footer-item">
+          <!-- <div class="col-md-3 footer-item">
             <h4>Useful Links</h4>
             <ul class="menu-list">
               <li><a href="#">Vivamus ut tellus mi</a></li>
@@ -419,9 +423,9 @@ https://templatemo.com/tm-545-finance-business
               <li><a href="#">Cursus augue hasellus</a></li>
               <li><a href="#">Lacinia ac sapien</a></li>
             </ul>
-          </div>
-          <div class="col-md-3 footer-item">
-            <h4>Additional Pages</h4>
+          </div> -->
+          <div class="col-md-4 footer-item">
+            <h4>Useful Links</h4>
             <ul class="menu-list">
               <li><a href="#">About Us</a></li>
               <li><a href="#">How We Work</a></li>
@@ -430,7 +434,7 @@ https://templatemo.com/tm-545-finance-business
               <li><a href="#">Privacy Policy</a></li>
             </ul>
           </div>
-          <div class="col-md-3 footer-item last-item">
+          <div class="col-md-4 footer-item last-item">
             <h4>Contact Us</h4>
             <div class="contact-form">
               <form id="contact footer-contact" action="" method="post">
@@ -467,9 +471,7 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p>Copyright &copy; 2020 Financial Business Co., Ltd.
-            
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+            <p>Copyright &copy; <span id="currentYear"></span> - All rights reserved.
           </div>
         </div>
       </div>
@@ -494,6 +496,10 @@ https://templatemo.com/tm-545-finance-business
           t.style.color='#fff';
           }
       }
+    </script>
+
+    <script>
+      document.getElementById("currentYear").textContent = currentYear;
     </script>
 
   </body>
